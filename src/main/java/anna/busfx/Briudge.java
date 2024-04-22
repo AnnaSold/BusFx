@@ -15,7 +15,14 @@ public class Briudge {
         return height;
     }
 
-    public boolean calculate(List<Briudge> heightBridges){
+    @Override
+    public String toString() {
+        return "Briudge{" +
+                "height=" + height +
+                '}';
+    }
+
+    public static boolean calculate(List<Briudge> heightBridges){
         boolean safe = true;
         for (Briudge b: heightBridges) {
             int height1 = 437;

@@ -30,17 +30,17 @@ public class HelloController {
         List<Briudge> heightBridges = new ArrayList<>();
         int num = Integer.parseInt(brIdgA.getText());
         for (int i = 0; i < num; i++) {
-            int height = Integer.parseInt(brIdgA.getText());
+            int height = Integer.parseInt(bridgeH.getText());
             Briudge b = new Briudge(height);
             heightBridges.add(b);
         }
         return heightBridges;
     }
 
-    public void calculate(){
+    public  void calculate(){
         List<Briudge> heightBridges = getHeight();
-        Briudge b = new Briudge(1);
-        boolean safe = b.calculate(heightBridges);
+        boolean safe = Briudge.calculate(heightBridges);
+        System.out.println(heightBridges);
         //boolean s = true;
 
         labNOCRUSH.setVisible(safe);
