@@ -15,7 +15,7 @@ public class Briudge {
         return height;
     }
 
-    public void calculate(List<Briudge> heightBridges){
+    public boolean calculate(List<Briudge> heightBridges){
         boolean safe = true;
         for (Briudge b: heightBridges) {
             int height1 = 437;
@@ -33,6 +33,7 @@ public class Briudge {
 
             System.out.println("No crush");
 
-    }
+    if (safe == true) return true;
+    else  return false;
 }
-
+}
