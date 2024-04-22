@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="274.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anna.busfx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+      
+          <Label fx:id="lab1" layoutX="11.0" layoutY="6.0" text="Введите количество мостов" />
+         <TextField fx:id="brIdgA" layoutX="13.0" layoutY="27.0" />
+         <TextField fx:id="bridgeH" layoutX="13.0" layoutY="75.0" />
+         <Label fx:id="lab2" layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="177.0" text="Введите высоту мостов" />
+         <Button fx:id="but1" layoutX="38.0" layoutY="141.0" mnemonicParsing="false" onAction="#calculate" text="Посчитать" />
+         <Label fx:id="labNOCRUSH" layoutX="161.0" layoutY="145.0" text="NO CRUSH" textFill="#10bf0a" visible="false">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="labCRUSH" layoutX="161.0" layoutY="173.0" text="CRUSH" textFill="#e11b05" visible="false">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+</VBox>
