@@ -41,10 +41,13 @@ public class HelloController {
         List<Briudge> heightBridges = getHeight();
         boolean safe = Briudge.calculate(heightBridges);
         System.out.println(heightBridges);
-        //boolean s = true;
+
 
         labNOCRUSH.setVisible(safe);
-        labCRUSH.setVisible(safe);
+        boolean s = false;
+        if (safe == false)
+             s = true;
+        labCRUSH.setVisible(s);
 
     }
     }
